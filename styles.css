@@ -1,0 +1,7 @@
+.document {
+    display: flex;
+}
+
+.left-side {
+    background-color: green;
+}
