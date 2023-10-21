@@ -60,18 +60,22 @@ table {
 
 .left-side {
     background-color: green;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     height: 100vh;
     font-family: Norse-Bold;
 }
 
 .right-side {
+/*     font-family: 'Courier New', Courier, monospace;
+    font-weight: 900; */
+
+    background-color: #F9FAFB;
     height: 100vh;
     flex: 1 1 auto;
 
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .right-side > div {
@@ -83,9 +87,56 @@ table {
     margin-left: 50px;
 }
 
-.form-wrapper {
-    background-color: slategray;
 
+
+.form-wrapper {
+    background-color: #FFFFFF;
+    flex: 1 1 auto;
+
+    display: flex;
+    flex-flow: column;
+    gap: 50px;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-flow: row nowrap;
+    
+    column-gap: 50px;
+}
+
+.sign-up-form > div {
+    display: flex;
+    flex-flow: column;
+    row-gap: 10px;
+    
+}
+
+.sign-up-form > div > * {
+    gap: 100px 100px;
+}
+
+.sign-up-form > div > input {
+    width: 180px;
+}
+
+
+
+.disclaimer-text {
+    flex: 2 1 auto;
+}
+
+.create-account-btn-and-log-in-prompt-div {
+    background-color: #F9FAFB;
+    flex: 2 1 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: x-large;
 }
 
 .sign-up-form > div > input {
@@ -99,7 +150,7 @@ table {
     box-shadow: 3px 3px 4px 0px #2FE27D;
 }
 
-
 .create-account-btn {
     background-color: #596D48;
+    align-self: flex-start;
 }
