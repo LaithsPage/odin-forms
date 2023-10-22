@@ -59,10 +59,28 @@ table {
 }
 
 .left-side {
-    background-color: green;
-    flex: 1 1 auto;
+    background-image: url(left-banner-background.jpg);
+    background-size: cover;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    width: 25%;
     height: 100vh;
+}
+
+.text-and-logo {
     font-family: Norse-Bold;
+    color: white;
+    background-color: rgb(0 0 0 / 0.5);
+    font-size: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40%;
+}
+
+.text-and-logo > * {
+    flex: 0 0 auto;
 }
 
 .right-side {
@@ -71,7 +89,7 @@ table {
 
     background-color: #F9FAFB;
     height: 100vh;
-    flex: 1 1 auto;
+    width: 75%;
 
     display: flex;
     flex-flow: column nowrap;
@@ -87,15 +105,35 @@ table {
     margin-left: 50px;
 }
 
-
-
 .form-wrapper {
     background-color: #FFFFFF;
     flex: 1 1 auto;
 
     display: flex;
+    
     flex-flow: column;
-    gap: 50px;
+    
+    gap: 30px;
+
+}
+
+.form-wrapper > h3 {
+    margin-top: 20px;
+}
+
+.disclaimer-text {
+    align-content: center;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.disclaimer-text > h3 {
+    width: 650px;
+}
+
+.disclaimer-text > h3 > em {
+    font-style: italic;
 }
 
 .sign-up-form {
@@ -119,8 +157,6 @@ table {
 .sign-up-form > div > input {
     width: 180px;
 }
-
-
 
 .disclaimer-text {
     flex: 2 1 auto;
