@@ -201,7 +201,7 @@ table {
     justify-content: center;
 }
 
-.create-account-btn > h3 {
+.create-account-text {
     color: #E5E7EB;
     font-size: 15px;
 }
