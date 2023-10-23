@@ -64,6 +64,7 @@ table {
     background-position-x: 50%;
     background-repeat: no-repeat;
     width: 25%;
+    /* flex: 1 1 auto; */
     height: 100vh;
 }
 
@@ -74,6 +75,7 @@ table {
     font-size: 80px;
 
     display: flex;
+    
     justify-content: center;
     align-items: center;
     margin-top: 40%;
@@ -90,6 +92,7 @@ table {
     background-color: #F9FAFB;
     height: 100vh;
     width: 75%;
+    /* flex: 3; */
 
     display: flex;
     flex-flow: column nowrap;
@@ -114,6 +117,8 @@ table {
     flex-flow: column;
     
     gap: 30px;
+
+    filter: drop-shadow(0px 5px 3px #DADBDC);
 
 }
 
@@ -155,7 +160,18 @@ table {
 }
 
 .sign-up-form > div > input {
-    width: 180px;
+    width: 200px;
+    height: 25px;
+
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+.sign-up-form > div > input:focus {
+    border: 0.75px solid blue;
+    outline: 0px;
+    box-shadow: 3px 3px 4px 1px #DADBDC;
+    /* filter: drop-shadow(5px 5px 10px #DADBDC); */
 }
 
 .disclaimer-text {
@@ -170,23 +186,36 @@ table {
     flex-direction: column;
 }
 
+.create-account-btn {
+    background-color: #596D48;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-account-btn > h3 {
+    color: #E5E7EB;
+    font-size: 15px;
+}
+
+.create-account-btn-and-log-in-prompt-div > p {
+    font-size: 17px;
+}
+
+.login {
+    color: #596D48;
+    text-decoration: none;
+}
+
 h3 {
     font-weight: 900;
     font-size: x-large;
-}
-
-.sign-up-form > div > input {
-    border: 0.75px solid #E5E7EB;
-    border-radius: 2px;
-}
-
-.sign-up-form > div > input:focus {
-    border: 0.75px solid blue;
-    outline: 0px;
-    box-shadow: 3px 3px 4px 0px #2FE27D;
-}
-
-.create-account-btn {
-    background-color: #596D48;
-    align-self: flex-start;
 }
